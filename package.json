@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Test photo app",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/Flexagon/photo-app"
+  },
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "jest"
