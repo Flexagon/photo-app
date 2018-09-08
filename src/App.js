@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import axios from 'axios';
 import Photos from './Pages/Photos';
 import FavoritePhotos from './Pages/FavoritePhotos';
 import ImagesList from './Components/ImagesList';
