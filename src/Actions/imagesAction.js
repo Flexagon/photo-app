@@ -1,10 +1,11 @@
 export const GET_PHOTOS_REQUEST = 'GET_PHOTOS_REQUEST';
 export const GET_PHOTOS_SUCCESS = 'GET_PHOTOS_SUCCESS';
 export const GET_PHOTOS_FAIL = 'GET_PHOTOS_FAIL';
+export const TOGGLE_IMAGE = 'TOGGLE_IMAGE';
 
 const API_KEY = '8c3fbb523f56915d91b90df43410e00bbe03eff259a671396d7f6b4ca1f6ce2a';
 
-export const getImages = (word = 'surf') => (dispatch) => {
+export const getImages = word => (dispatch) => {
   dispatch({
     type: GET_PHOTOS_REQUEST,
     payload: [],
@@ -26,3 +27,8 @@ export const getImages = (word = 'surf') => (dispatch) => {
       });
     });
 };
+
+export const toggleImage = id => ({
+  type: TOGGLE_IMAGE,
+  id,
+});

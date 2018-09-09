@@ -25,12 +25,7 @@ class SearchImages extends Component {
   }
 }
 
-const mapStateToProps = (store) => {
-  console.log('store', store);
-  return {
-    data: store.data,
-  };
-};
+const mapStateToProps = store => ({ data: store.data });
 
 const mapDispatchToProps = dispatch => ({
   getImagesAction: word => dispatch(getImages(word)),

@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import SearchImages from '../Containers/SearchImages';
 import Photos from '../Containers/Photos';
-import FavoriteImages from './FavoriteImages';
+import FavoriteImages from '../Containers/Favorite';
 
 const App = () => (
   <div>

@@ -5,11 +5,13 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-unused-vars": 0,
     "max-len": [1, 120, 2, {"ignoreComments": true}],
-    "no-console": 0
+    "no-console": 0,
+    "no-case-declarations": 0
   },
   "globals": {
     "fetch": false,
     "document": true,
+    "window": true,
     "it": true
   }
 }
