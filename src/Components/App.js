@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import SearchImages from '../Containers/SearchImages';
 import Photos from '../Containers/Photos';
-import FavoritePhotos from './FavoritePhotos';
+import FavoriteImages from './FavoriteImages';
 
 const App = () => (
   <div>
@@ -10,8 +10,8 @@ const App = () => (
       <SearchImages />
       <nav>
         <ul className="Header-links">
-          <li><Link className="Header-link" to="/">Photos</Link></li>
-          <li><Link className="Header-link" to="/favorite-photos">FavoritePhotos</Link></li>
+          <li><Link className="Header-link" to="/">Home</Link></li>
+          <li><Link className="Header-link" to="/favorite">Favorite</Link></li>
         </ul>
       </nav>
     </header>
@@ -19,7 +19,7 @@ const App = () => (
       <main>
         <Switch>
           <Route exact path="/" component={Photos} />
-          <Route path="/favorite-photos" component={FavoritePhotos} />
+          <Route path="/favorite" component={FavoriteImages} />
         </Switch>
       </main>
     </div>
