@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
-import App from './App';
-import './App.scss';
+import { Provider } from 'react-redux';
+import { store } from './Store/ConfigureStore';
+import App from './Components/App';
+import './Styles/App.scss';
 
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <Provider store={store}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>,
   document.getElementById('app') || document.createElement('div'),
 );
 

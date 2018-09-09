@@ -6,8 +6,8 @@ const ImgList = (props) => {
   const { data } = props;
 
   return (
-    <ul>
-      {data.length ? data.map(item => <ImagesItem url={item.urls.small} key={item.id} />) : ''}
+    <ul className="Images-list">
+      {data.length ? data.map(item => <ImagesItem url={item.urls.small} key={item.id} id={item.id} />) : ''}
     </ul>
   );
 };
