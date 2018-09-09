@@ -18,8 +18,8 @@ const ImagesItem = (props) => {
 };
 
 ImagesItem.propTypes = {
-  isChecked: PropTypes.bool.isRequired,
   toggleImage: PropTypes.func.isRequired,
+  isChecked: PropTypes.bool.isRequired,
   url: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 import SearchImages from '../Containers/SearchImages';
 import Photos from '../Containers/Photos';
-import FavoriteImages from '../Containers/Favorite';
+import Favorite from '../Containers/Favorite';
 
 const App = () => (
   <div>
@@ -19,7 +19,7 @@ const App = () => (
       <main>
         <Switch>
           <Route exact path="/" component={Photos} />
-          <Route path="/favorite" component={FavoriteImages} />
+          <Route path="/favorite" component={Favorite} />
         </Switch>
       </main>
     </div>

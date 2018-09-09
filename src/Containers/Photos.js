@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ImagesList from '../Components/ImagesList';
-import { getImages, toggleImage } from '../Actions/imagesAction';
+import Spinner from '../Components/Spinner';
+import { getImages, toggleImage } from '../Actions/imagesActions';
 
 class Photos extends Component {
   componentWillMount() {
@@ -14,7 +15,7 @@ class Photos extends Component {
   render() {
     const { data, toggleImageAction } = this.props;
 
-    if (data.isFetching) return <h2>Загрузка...</h2>;
+    if (data.isFetching) return <Spinner />;
 
     return (
       <div className="Images">

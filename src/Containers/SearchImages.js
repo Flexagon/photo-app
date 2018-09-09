@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getImages } from '../Actions/imagesAction';
+import { getImages } from '../Actions/imagesActions';
 
 class SearchImages extends Component {
   onSearchChange = (e) => {

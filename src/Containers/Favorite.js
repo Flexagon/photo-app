@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ImagesList from '../Components/ImagesList';
-import { getImages, toggleImage } from '../Actions/imagesAction';
+import { getImages, toggleImage } from '../Actions/imagesActions';
 
 class Favorite extends Component {
   componentWillMount() {}

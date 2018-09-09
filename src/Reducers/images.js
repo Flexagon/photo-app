@@ -1,6 +1,6 @@
 import {
   GET_PHOTOS_REQUEST, GET_PHOTOS_SUCCESS, GET_PHOTOS_FAIL, TOGGLE_IMAGE,
-} from '../Actions/imagesAction';
+} from '../Actions/imagesActions';
 
 export const initialState = {
   word: 'surf',

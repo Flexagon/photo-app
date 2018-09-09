@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ImagesItem from './ImagesItem';
 
-const ImgList = (props) => {
+const ImagesList = (props) => {
   const { data, toggleImage } = props;
 
   return (
@@ -22,9 +22,9 @@ const ImgList = (props) => {
   );
 };
 
-ImgList.propTypes = {
+ImagesList.propTypes = {
   data: PropTypes.instanceOf(Object).isRequired,
   toggleImage: PropTypes.func.isRequired,
 };
 
-export default ImgList;
+export default ImagesList;
